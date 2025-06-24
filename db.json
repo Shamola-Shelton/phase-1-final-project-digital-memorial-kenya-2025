@@ -13,6 +13,27 @@
       "age": 19,
       "story": "Shot during protests in Kisumu.",
       "photo": "https://example.com/jane.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Kevin Wekesa",
+      "age": 26,
+      "story": "Abducted and later found deceased in Eldoret.",
+      "photo": "https://example.com/kevin.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mary Atieno",
+      "age": 30,
+      "story": "Killed while providing medical aid in Mombasa.",
+      "photo": "https://example.com/mary.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Samuel Kipkoech",
+      "age": 24,
+      "story": "Shot in the chest during demonstrations in Nakuru.",
+      "photo": "https://example.com/samuel.jpg"
     }
   ],
   "tributes": [
@@ -29,6 +50,34 @@
       "date": "2024-06-25",
       "title": "Parliament Breach",
       "description": "Protesters storm Parliament building in Nairobi.",
+      "link": "https://news-article-link.com"
+    },
+    {
+      "id": 2,
+      "date": "2024-06-20",
+      "title": "First Nationwide Protest",
+      "description": "Nationwide protests begin against tax hikes.",
+      "link": "https://news-article-link.com"
+    },
+    {
+      "id": 3,
+      "date": "2024-06-30",
+      "title": "International Condemnation",
+      "description": "Global human rights groups condemn government response.",
+      "link": "https://news-article-link.com"
+    },
+    {
+      "id": 4,
+      "date": "2024-07-01",
+      "title": "82 Abductions Reported",
+      "description": "KNCHR reports at least 82 protest-related abductions.",
+      "link": "https://news-article-link.com"
+    },
+    {
+      "id": 5,
+      "date": "2024-07-05",
+      "title": "Youth-Led Memorial Rallies",
+      "description": "Youth groups organize peaceful memorial rallies across Kenya.",
       "link": "https://news-article-link.com"
     }
   ]
