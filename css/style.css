@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main#memorial-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.victim-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.victim-card:hover {
+    transform: translateY(-5px);
+    opacity: 0.95;
+}
+
+.victim-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#tribute-form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+#tribute-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#tribute-form button {
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#tribute-form button:hover {
+    background: #222;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #eee;
+    margin-top: 20px;
+}
