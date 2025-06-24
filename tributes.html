@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Submit a Tribute</title>
+  <link rel=“stylesheet” href=“./css/styles.css”>
+</head>
+<body>
+  <header>
+    <h1>In Memory of 2024–2025 Protest Victims</h1>
+    <nav>
+      <ul>
+        <li><a href=“./index.html”>Memorial Wall</a></li>
+        <li><a href=“./tributes.html” class=“active”>Submit Tribute</a></li>
+        <li><a href=“./timeline.html”>Timeline</a></li>
+        <li><a href=“./resources.html”>Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id=“tribute-form”>
+      <h2>Submit a Tribute</h2>
+      <form id=“submit-tribute”>
+        <label for=“victim-id”>Select Victim:</label>
+        <select id=“victim-id” name=“victim-id” required></select>
+        <label for=“name”>Your Name (Optional):</label>
+        <input type=“text” id=“name” name=“name”>
+        <label for=“message”>Tribute Message:</label>
+        <textarea id=“message” name=“message” required></textarea>
+        <button type=“submit”>Submit Tribute</button>
+      </form>
+      <div id=“tribute-confirmation”></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dedicated to the memory of those lost in the 2024–2025 Kenyan protests.</p>
+  </footer>
+
+  <script src=“./src/tributes.js”></script>
+</body>
+</html>
