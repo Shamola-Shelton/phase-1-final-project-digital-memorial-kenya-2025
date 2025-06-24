@@ -1,0 +1,35 @@
+{
+  "victims": [
+    {
+      "id": 1,
+      "name": "Albert Ojwang",
+      "age": 22,
+      "story": "Killed during protests on June 25 near Parliament.",
+      "photo": "https://example.com/albert.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Achieng",
+      "age": 19,
+      "story": "Shot during protests in Kisumu.",
+      "photo": "https://example.com/jane.jpg"
+    }
+  ],
+  "tributes": [
+    {
+      "id": 1,
+      "author": "Anonymous",
+      "message": "We will remember your courage.",
+      "approved": true
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "date": "2024-06-25",
+      "title": "Parliament Breach",
+      "description": "Protesters storm Parliament building in Nairobi.",
+      "link": "https://news-article-link.com"
+    }
+  ]
+}
