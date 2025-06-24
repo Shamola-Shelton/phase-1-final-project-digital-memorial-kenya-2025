@@ -1,225 +1,224 @@
-/* General Reset & Base Styles */
-* {
+body {
+    font-family: 'Georgia', serif;
+    background: #f8f8f8;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
     line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-/* Header & Navigation */
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 10px;
     text-align: center;
-    border-bottom: 5px solid #900c3f;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #f1f1f1;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffcccb;
-}
-
-/* Main Sections */
-main {
-    flex: 1;
+    background: #222;
+    color: #fff;
     padding: 20px;
 }
 
-/* Memorial Wall Styles */
-#memorial-wall {
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+nav a.active, nav a:hover {
+    border-bottom: 2px solid #ccc;
+}
+
+section#memorial-wall {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .victim-card {
-    background-color: #fff;
+    background: #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    border-top: 5px solid #900c3f;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
 }
 
 .victim-card:hover {
     transform: translateY(-5px);
-    opacity: 0.97;
+    opacity: 0.95;
 }
 
 .victim-card img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.victim-card:hover img {
+    filter: grayscale(0%);
 }
 
 .victim-card h3 {
-    margin-bottom: 5px;
-    color: #222;
+    margin: 10px 0;
     font-size: 1.2rem;
 }
 
 .victim-card p {
-    color: #555;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-/* Tribute Form */
+.tribute-list {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #444;
+    text-align: left;
+}
+
+.share-buttons {
+    margin-top: 10px;
+}
+
+.share-buttons a {
+    margin: 0 5px;
+    color: #444;
+    text-decoration: none;
+}
+
 #tribute-form {
-    background-color: #fff;
+    background: #fff;
     padding: 20px;
-    margin: 30px auto;
-    max-width: 600px;
+    margin: 20px auto;
+    max-width: 500px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#tribute-form h2 {
-    margin-bottom: 15px;
-    color: #333;
-}
-
-#new-tribute-form {
+#tribute-form form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-#new-tribute-form input,
-#new-tribute-form textarea {
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+#tribute-form select,
+#tribute-form input,
+#tribute-form textarea {
+    padding: 10px;
     font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-#new-tribute-form button {
-    padding: 12px;
-    border: none;
-    background-color: #900c3f;
+#tribute-form button {
+    padding: 10px;
+    background: #444;
     color: #fff;
-    border-radius: 6px;
-    font-size: 1rem;
+    border: none;
     cursor: pointer;
-    transition: background 0.3s ease;
+    border-radius: 4px;
 }
 
-#new-tribute-form button:hover {
-    background-color: #700b34;
+#tribute-form button:hover {
+    background: #222;
 }
 
-/* Timeline Cards */
-.event-card {
-    background-color: #fff;
-    border-left: 6px solid #900c3f;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+#timeline {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.timeline-event {
+    background: #fff;
+    border-left: 4px solid #444;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.event-card:hover {
-    background-color: #f4f4f4;
+.timeline-event:hover {
+    background: #f0f0f0;
 }
 
-.event-card h3 {
-    margin-bottom: 8px;
-    color: #222;
+.timeline-event h3 {
+    margin: 0;
     font-size: 1.1rem;
 }
 
-.event-card p {
-    color: #555;
-    margin-bottom: 8px;
+.timeline-event p {
+    margin: 5px 0;
 }
 
-.event-card a {
-    color: #0066cc;
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-.event-card a:hover {
-    color: #004a99;
-}
-
-/* Resources */
 #resources {
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-#resources p {
-    margin-bottom: 12px;
+#resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resources li {
+    margin: 10px 0;
 }
 
 #resources a {
-    display: inline-block;
-    padding: 12px 18px;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    color: #444;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
 #resources a:hover {
-    background-color: #f0f0f0;
+    text-decoration: underline;
 }
 
-/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
     text-align: center;
-    padding: 15px;
-    margin-top: auto;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    margin-top: 20px;
 }
 
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-    nav a {
-        display: inline-block;
-        margin: 8px;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    section#memorial-wall {
+        grid-template-columns: 1fr;
     }
 
     .victim-card img {
-        height: 180px;
-    }
-
-    #tribute-form {
-        margin: 20px 10px;
+        height: 150px;
     }
 }
