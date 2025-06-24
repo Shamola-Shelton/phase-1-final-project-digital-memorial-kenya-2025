@@ -39,8 +39,16 @@
   "tributes": [
     {
       "id": 1,
+      "victimId": 1,
       "author": "Anonymous",
       "message": "We will remember your courage.",
+      "approved": true
+    },
+    {
+      "id": 2,
+      "victimId": 2,
+      "author": "John",
+      "message": "Your sacrifice inspires us all.",
       "approved": true
     }
   ],

@@ -1,49 +1,37 @@
-document.addEventListener('DOMContentLoaded', main);
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('http://localhost:3000/victims')
+    .then(response => response.json())
+    .then(victims => {
+      const victimGrid = document.getElementById('victim-grid');
+      victims.forEach(victim => {
+        const card = document.createElement('div');
+        card.classList.add('victim-card');
+        card.innerHTML = `
+          <img src="${victim.photo}" alt="${victim.name}">
+          <h3>${victim.name}</h3>
+          <p>Age: ${victim.age}</p>
+          <p>${victim.story}</p>
+          <div class="tribute-list" id="tributes-${victim.id}"></div>
+          <div class="share-buttons">
+            <a href="https://twitter.com/intent/tweet?text=In%20memory%20of%20${encodeURIComponent(victim.name)}&url=${encodeURIComponent(window.location.href)}" target="_blank">Share on X</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}" target="_blank">Share on Facebook</a>
+            <a href="https://api.whatsapp.com/send?text=In%20memory%20of%20${encodeURIComponent(victim.name)}%20${encodeURIComponent(window.location.href)}" target="_blank">Share on WhatsApp</a>
+          </div>
+        `;
+        victimGrid.appendChild(card);
 
-function main() {
-    displayVictims();
-    addTributeListener();
-}
-
-function displayVictims() {
-    fetch('http://localhost:3000/victims')
-        .then(res => res.json())
-        .then(victims => {
-            const wall = document.getElementById('memorial-wall');
-            wall.innerHTML = '';
-            victims.forEach(victim => {
-                const card = document.createElement('div');
-                card.className = 'victim-card';
-                card.innerHTML = `
-                    <img src="${victim.photo}" alt="${victim.name}" />
-                    <h3>${victim.name}</h3>
-                    <p>Age: ${victim.age}</p>
-                    <p>${victim.story}</p>
-                `;
-                wall.appendChild(card);
+        // Fetch tributes for this victim
+        fetch(`http://localhost:3000/tributes?victimId=${victim.id}&approved=true`)
+          .then(response => response.json())
+          .then(tributes => {
+            const tributeList = document.getElementById(`tributes-${victim.id}`);
+            tributes.forEach(tribute => {
+              const p = document.createElement('p');
+              p.innerHTML = `<strong>${tribute.author || 'Anonymous'}:</strong> ${tribute.message}`;
+              tributeList.appendChild(p);
             });
-        });
-}
-
-function addTributeListener() {
-    const form = document.getElementById('new-tribute-form');
-    form.addEventListener('submit', event => {
-        event.preventDefault();
-        const author = document.getElementById('author').value || 'Anonymous';
-        const message = document.getElementById('message').value;
-
-        fetch('http://localhost:3000/tributes', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                author,
-                message,
-                approved: false // for moderation
-            })
-        })
-        .then(() => {
-            alert('Thank you for your tribute. It will be displayed after approval.');
-            form.reset();
-        });
-    });
-}
+          });
+      });
+    })
+    .catch(error => console.error('Error fetching victims:', error));
+});

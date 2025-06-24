@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Timeline of Protests</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protest Timeline</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <header>
+    <h1>In Memory of 2024–2025 Protest Victims</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Memorial Wall</a></li>
+        <li><a href="./tributes.html">Submit Tribute</a></li>
+        <li><a href="./timeline.html" class="active">Timeline</a></li>
+        <li><a href="./resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Timeline of the 2024–2025 Protests</h1>
-        <nav>
-            <a href="index.html">Memorial Wall</a>
-            <a href="timeline.html">Timeline</a>
-            <a href="resources.html">Resources</a>
-        </nav>
-    </header>
+  <main>
+    <section id="timeline">
+      <h2>Timeline of Protests</h2>
+      <div id="timeline-container"></div>
+    </section>
+  </main>
 
-    <main id="timeline">
-        <!-- Timeline events will load here -->
-    </main>
+  <footer>
+    <p>Dedicated to the memory of those lost in the 2024–2025 Kenyan protests.</p>
+  </footer>
 
-    <footer>
-        <p>In Memory of the Victims of the 2024–2025 Kenyan Protests</p>
-    </footer>
-
-    <script src="src/timeline.js"></script>
-
+  <script src="./src/timeline.js"></script>
 </body>
 </html>
