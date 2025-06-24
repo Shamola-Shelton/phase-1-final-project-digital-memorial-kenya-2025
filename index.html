@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang恩=“en”>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Kenya Protest Memorial</title>
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Digital Memorial for 2024/2025 Kenyan Protest Victims</title>
+  <link rel=“stylesheet” href=“css/styles.css”>
 </head>
 <body>
+  <header>
+    <h1>In Memory of 2024–2025 Protest Victims</h1>
+    <nav>
+      <ul>
+        <li><a href=“index.html” class=“active”>Memorial Wall</a></li>
+        <li><a href=“tributes.html”>Submit Tribute</a></li>
+        <li><a href=“timeline.html”>Timeline</a></li>
+        <li><a href=“resources.html”>Resources</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Kenya Protest Victims Memorial</h1>
-        <nav>
-            <a href="index.html">Memorial Wall</a> <br>
-            <a href="timeline.html">Timeline</a> <br>
-            <a href="resources.html">Resources</a>
-        </nav>
-    </header>
-
-    <main id="memorial-wall">
-        <!-- Victim profiles will be loaded here by JS -->
-    </main>
-
-    <section id="tribute-form">
-        <h2>Submit a Tribute</h2>
-        <form id="new-tribute-form">
-            <input type="text" id="author" name="author" placeholder="Your Name (optional)" />
-            <textarea id="message" name="message" placeholder="Your message" required></textarea>
-            <button type="submit">Submit Tribute</button>
-        </form>
+  <main>
+    <section id=“memorial-wall”>
+      <h2>Memorial Wall</h2>
+      <div id=“victim-grid”></div>
     </section>
+  </main>
 
-    <footer>
-        <p>In Memory of the Victims of the 2024–2025 Kenyan Protests</p>
-    </footer>
+  <footer>
+    <p>Dedicated to the memory of those lost in the 2024–2025 Kenyan protests.</p>
+  </footer>
 
-    <script src="src/index.js"></script>
-
+  <script src=“src/index.js”></script>
 </body>
 </html>
