@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Digital Memorial for victims of the 2024–2025 Kenyan protests. Honor lives lost, submit tributes, and explore protest history." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Memorial for victims of the 2024–2025 Kenyan protests. Honor lives lost, submit tributes, and explore protest history.">
   <title>Digital Memorial</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS for map in timeline -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
   <header>
     <h1>In Memory of 2024–2025 Protest Victims</h1>
     <nav role="navigation" aria-label="Main Navigation">
       <ul>
-        <li><a href="./index.html" class="active">Memorial Wall</a></li>
-        <li><a href="./tributes.html">Submit Tribute</a></li>
-        <li><a href="./timeline.html">Timeline</a></li>
-        <li><a href="./resources.html">Resources</a></li>
+        <li><a href="#memorial-wall" data-section="memorial-wall" class="active">Memorial Wall</a></li>
+        <li><a href="#tributes" data-section="tributes">Submit Tribute</a></li>
+        <li><a href="#timeline" data-section="timeline">Timeline</a></li>
+        <li><a href="#resources" data-section="resources">Resources</a></li>
       </ul>
     </nav>
   </header>
@@ -28,15 +30,78 @@
         id="search-bar"
         placeholder="Search by name..."
         aria-label="Search victims by name"
-      />
+      >
       <div id="victim-grid"></div>
+    </section>
+
+    <section id="tributes" style="display: none;">
+      <section id="tribute-form">
+        <h2>Submit a Tribute</h2>
+        <p class="guidelines">Share a memory, a message of support, or a reflection to honor the victim.</p>
+        <form id="submit-tribute">
+          <label for="victim-id">Select Victim:</label>
+          <select id="victim-id" name="victim-id" required aria-label="Select a victim to submit a tribute for"></select>
+          <label for="name">Your Name (Optional):</label>
+          <input type="text" id="name" name="name" aria-label="Your name (optional)">
+          <label for="message">Tribute Message:</label>
+          <textarea id="message" name="message" required aria-label="Your tribute message"></textarea>
+          <button type="button" id="preview-btn">Preview Tribute</button>
+          <button type="submit">Submit Tribute</button>
+        </form>
+        <div id="tribute-preview" class="preview"></div>
+        <div id="tribute-confirmation"></div>
+      </section>
+      <section id="tributes-list">
+        <h2>Submitted Tributes</h2>
+        <div id="tributes-grid"></div>
+      </section>
+    </section>
+
+    <section id="timeline" style="display: none;">
+      <section id="protest-overview">
+        <h2>2024–2025 Kenyan Protests: A Year of Unrest</h2>
+        <p>On June 25, 2025, one year after the deadly 2024 protests, thousands of Kenyan youth took to the streets...</p>
+      </section>
+      <section id="timeline-section">
+        <h2>Timeline of Protests</h2>
+        <select id="event-filter" aria-label="Filter events by type">
+          <option value="all">All Events</option>
+          <option value="protest">Protests</option>
+          <option value="memorial">Memorials</option>
+        </select>
+        <div id="timeline-container" class="horizontal-timeline"></div>
+        <div id="map-view" style="height: 400px;"></div>
+      </section>
+    </section>
+
+    <section id="resources" style="display: none;">
+      <h2>Support and Information</h2>
+      <div class="accordion">
+        <button class="accordion-btn">Legal Aid</button>
+        <div class="accordion-content">
+          <p>Kenya Legal Aid - Free legal support for protesters. Contact: +254 123 456 789</p>
+          <p>Testimonial: "They helped me navigate my arrest case." - Jane K.</p>
+        </div>
+        <button class="accordion-btn">Mental Health Support</button>
+        <div class="accordion-content">
+          <p>Hope Counseling - Free sessions for trauma. Contact: info@hope.org</p>
+          <p>Testimonial: "A lifeline after losing a friend." - Peter M.</p>
+        </div>
+      </div>
+      <a href="#" id="download-guide">Download Protest Safety Guide (PDF)</a>
+      <form id="contact-form">
+        <h3>Need Help? Contact Us</h3>
+        <input type="text" placeholder="Your Name" aria-label="Your name">
+        <textarea placeholder="Your Message" aria-label="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 
   <div id="victim-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
     <div class="modal-content">
-      <button class="modal-close" aria-label="Close modal">&times;</button>
-      <img id="modal-image" src="" alt="Victim photo" />
+      <button class="modal-close" aria-label="Close modal">×</button>
+      <img id="modal-image" src="" alt="Victim photo">
       <h3 id="modal-name"></h3>
       <p id="modal-age"></p>
       <p id="modal-story"></p>
@@ -48,6 +113,45 @@
     <p>Dedicated to the memory of those lost in the 2024–2025 Kenyan protests.</p>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="./src/index.js"></script>
+  <script src="./src/tributes.js"></script>
+  <script src="./src/timeline.js"></script>
+  <script src="./src/resources.js"></script>
+  <script>
+    // Simple SPA router
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('main > section');
+      const navLinks = document.querySelectorAll('nav a');
+
+      function showSection(sectionId) {
+        sections.forEach(section => {
+          section.style.display = section.id === sectionId ? 'block' : 'none';
+        });
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.dataset.section === sectionId);
+        });
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const sectionId = link.dataset.section;
+          showSection(sectionId);
+          history.pushState(null, '', `#${sectionId}`);
+        });
+      });
+
+      // Handle initial section based on hash or default to memorial-wall
+      const initialSection = window.location.hash.slice(1) || 'memorial-wall';
+      showSection(initialSection);
+
+      // Handle back/forward navigation
+      window.addEventListener('popstate', () => {
+        const sectionId = window.location.hash.slice(1) || 'memorial-wall';
+        showSection(sectionId);
+      });
+    });
+  </script>
 </body>
 </html>
