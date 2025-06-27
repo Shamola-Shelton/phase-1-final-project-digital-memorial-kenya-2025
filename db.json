@@ -119,7 +119,6 @@
       "story": "Shot in the head by police in Eldoret on June 25, 2024, and died while receiving treatment at Moi Teaching and Referral Hospital.",
       "photo": "https://www.june25kenya.org/profile-images/Credo%20Oyaro.jpeg"
     },
-    
     {
       "id": 33,
       "name": "Chris Gitonga",
@@ -144,11 +143,14 @@
       "approved": false
     },
     {
-      "id": 3,
-      "victimId": 1,
-      "author": "shelton",
-      "message": "ddddd",
-      "approved": false
+      "id": 4
+    },
+    {
+      "victimId": 3,
+      "author": "Diaz",
+      "message": "RIP",
+      "approved": false,
+      "id": 5
     }
   ],
   "events": [
@@ -157,49 +159,91 @@
       "date": "2024-06-18",
       "title": "Start of Protests",
       "description": "Protests begin across Kenya in response to the Finance Bill 2024, driven by youth using social media to mobilize against proposed tax increases.",
-      "link": "https://ddc514qh7t05d.cloudfront.net/dA/31a38eb9421c15bc3356ba7af3946324/1000w/80q"
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://ddc514qh7t05d.cloudfront.net/dA/31a38eb9421c15bc3356ba7af3946324/1000w/80q",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
     },
     {
       "id": 2,
       "date": "2024-06-20",
       "title": "First Nationwide Protest",
       "description": "Nationwide protests erupt against tax hikes, with clashes in Nairobi, Kisumu, and other cities. Rex Masai becomes the first casualty, shot by police in Nairobi.",
-      "link": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/8570/live/0c49dc90-5294-11f0-966c-2964b4227343.jpg.webp"
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/8570/live/0c49dc90-5294-11f0-966c-2964b4227343.jpg.webp",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
     },
     {
       "id": 3,
       "date": "2024-06-25",
       "title": "Parliament Breach",
       "description": "Protesters storm the Parliament building in Nairobi after the Finance Bill is passed, met with live ammunition from police, resulting in multiple casualties.",
-      "link": "https://wtop.com/wp-content/uploads/2024/06/Kenya_Protests_93648-1880x1254.jpg"
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://wtop.com/wp-content/uploads/2024/06/Kenya_Protests_93648-1880x1254.jpg",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
     },
     {
       "id": 4,
       "date": "2024-06-26",
       "title": "Bill Withdrawal",
       "description": "President Ruto withdraws the Finance Bill 2024 following widespread unrest and international pressure.",
-      "link": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2024-06/240626-kenya-protests-mb-1028-2afa85.jpg"
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2024-06/240626-kenya-protests-mb-1028-2afa85.jpg",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
     },
     {
       "id": 5,
       "date": "2024-06-30",
       "title": "International Condemnation",
       "description": "Global human rights groups condemn the Kenyan government’s use of excessive force against protesters.",
-      "link": "https://www.aljazeera.com/wp-content/uploads/2025/06/AFP__20250625__63NZ9JR__v2__HighRes__TopshotKenyaUnrestPolitics-1750843354.jpg?resize=1200%2C630"
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://www.aljazeera.com/wp-content/uploads/2025/06/AFP__20250625__63NZ9JR__v2__HighRes__TopshotKenyaUnrestPolitics-1750843354.jpg?resize=1200%2C630",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
     },
     {
       "id": 6,
       "date": "2024-07-01",
       "title": "82 Abductions Reported",
       "description": "The Kenya National Commission on Human Rights (KNCHR) reports at least 82 protest-related abductions, raising concerns over state-sponsored violence.",
-      "link": "https://www.aljazeera.com/wp-content/uploads/2025/02/2025-01-06T095531Z_607817961_RC2KZBA3173Y_RTRMADP_3_KENYA-PROTESTS-RIGHTS-1739547578.jpg?resize=1800%2C1800"
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://www.aljazeera.com/wp-content/uploads/2025/02/2025-01-06T095531Z_607817961_RC2KZBA3173Y_RTRMADP_3_KENYA-PROTESTS-RIGHTS-1739547578.jpg?resize=1800%2C1800",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
     },
     {
       "id": 7,
       "date": "2024-07-05",
       "title": "Youth-Led Memorial Rallies",
       "description": "Youth groups organize peaceful memorial rallies across Kenya to honor those who lost their lives during the protests.",
-      "link": "https://www.okayafrica.com/media-library/kenya-protestors-holding-up-flags-and-the-middle-finger-climb-a-statue-in-the-city-center-during-demonstrations.jpg?id=61104732&width=1245&height=700&quality=80&coordinates=0%2C78%2C0%2C79"
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://www.okayafrica.com/media-library/kenya-protestors-holding-up-flags-and-the-middle-finger-climb-a-statue-in-the-city-center-during-demonstrations.jpg?id=61104732&width=1245&height=700&quality=80&coordinates=0%2C78%2C0%2C79",
+      "type": "memorial",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
     }
   ]
 }

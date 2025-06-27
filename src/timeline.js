@@ -19,18 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderTimeline(events) {
     timelineContainer.innerHTML = '';
     events.forEach(event => {
-      let imageSrc = 'https://via.placeholder.com/300x200?text=Protest+Event';
-      let imageAlt = 'Protest Event Image';
+      let imageSrc = event.image || 'https://via.placeholder.com/300x200?text=Protest+Event';
+      let imageAlt = event.title || 'Protest Event Image';
 
+      // Optional override for special victim-linked visuals
       if (event.date === '2024-06-20') {
         const rex = victimsData.find(v => v.name === 'Rex Masai');
-        if (rex) {
+        if (rex && rex.photo) {
           imageSrc = rex.photo;
           imageAlt = `Photo of ${rex.name}`;
         }
       } else if (event.date === '2024-06-25') {
         const eric = victimsData.find(v => v.name === 'Eric Shieni');
-        if (eric) {
+        if (eric && eric.photo) {
           imageSrc = eric.photo;
           imageAlt = `Photo of ${eric.name}`;
         }
@@ -59,20 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const filtered = type === 'all' ? eventsData : eventsData.filter(e => e.type === type);
     renderTimeline(filtered);
   });
-
-  window.initMap = function () {
-    const map = new google.maps.Map(document.getElementById('map-view'), {
-      zoom: 6,
-      center: { lat: -1.2921, lng: 36.8219 }
-    });
-    eventsData.forEach(event => {
-      if (event.location) {
-        new google.maps.Marker({
-          position: event.location,
-          map,
-          title: event.title
-        });
-      }
-    });
-  };
 });

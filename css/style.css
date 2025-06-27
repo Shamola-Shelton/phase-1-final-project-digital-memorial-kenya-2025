@@ -63,13 +63,13 @@ section#memorial-wall {
   color: #F5F5F5;
 }
 
-#victim-grid {
+#victim-grid, #tributes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-.victim-card {
+.victim-card, .tribute-card {
   background: #1E3A8A; /* Deep blue for cards */
   border: 2px solid #FFD700; /* Gold border */
   border-radius: 12px;
@@ -81,7 +81,7 @@ section#memorial-wall {
   animation: fadeIn 1s ease-in forwards;
 }
 
-.victim-card:hover {
+.victim-card:hover, .tribute-card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
@@ -105,6 +105,7 @@ section#memorial-wall {
 }
 
 .victim-card h3,
+.tribute-card h3,
 .timeline-event h3 {
   font-family: 'Merriweather', serif;
   margin: 15px 0;
@@ -113,6 +114,7 @@ section#memorial-wall {
 }
 
 .victim-card p,
+.tribute-card p,
 .timeline-event p {
   color: #F5F5F5;
   font-size: 0.95rem;
@@ -193,8 +195,8 @@ section#memorial-wall {
   margin-bottom: 15px;
 }
 
-#tribute-form {
-  background: #1E3A8A; /* Deep blue for form */
+#tribute-form, #tributes-list {
+  background: #1E3A8A; /* Deep blue for form and tributes list */
   padding: 30px;
   margin: 40px auto;
   max-width: 700px;
@@ -208,7 +210,7 @@ section#memorial-wall {
   margin-bottom: 20px;
 }
 
-#tribute-form form {
+#tribute-form form, .edit-tribute-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -216,7 +218,9 @@ section#memorial-wall {
 
 #tribute-form select,
 #tribute-form input,
-#tribute-form textarea {
+#tribute-form textarea,
+.edit-tribute-form input,
+.edit-tribute-form textarea {
   padding: 12px;
   font-size: 1rem;
   border: 1px solid #D97706; /* Amber border */
@@ -226,7 +230,7 @@ section#memorial-wall {
   font-family: 'Lora', serif;
 }
 
-#tribute-form button {
+#tribute-form button, .edit-tribute-form button {
   padding: 12px;
   background: #D97706; /* Amber for buttons */
   color: #F5F5F5;
@@ -237,7 +241,7 @@ section#memorial-wall {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#tribute-form button:hover {
+#tribute-form button:hover, .edit-tribute-form button:hover {
   background: #F59E0B; /* Brighter amber on hover */
   transform: scale(1.05);
 }
@@ -248,12 +252,6 @@ section#memorial-wall {
   background: #1F2937; /* Dark gray for preview */
   border: 1px dashed #D97706;
   border-radius: 5px;
-}
-
-.preview img {
-  max-width: 100%;
-  max-height: 180px;
-  aspect-ratio: 3/2;
 }
 
 #protest-overview {
@@ -385,7 +383,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  #victim-grid {
+  #victim-grid, #tributes-grid {
     grid-template-columns: 1fr;
   }
 
