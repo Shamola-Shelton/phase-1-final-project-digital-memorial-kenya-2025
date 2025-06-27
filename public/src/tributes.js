@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fetch victims and tributes
   Promise.all([
-    fetch('http://localhost:3000/victims').then(res => res.json()),
-    fetch('http://localhost:3000/tributes').then(res => res.json())
+    fetch('https://phase-1-final-project-digital-memorial-pt0z.onrender.com/victims').then(res => res.json()),
+    fetch('https://phase-1-final-project-digital-memorial-pt0z.onrender.com/tributes').then(res => res.json())
   ])
     .then(([victims, tributes]) => {
       victimsData = victims;

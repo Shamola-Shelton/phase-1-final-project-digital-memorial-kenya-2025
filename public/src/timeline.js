@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let victimsData = [];
 
   Promise.all([
-    fetch('http://localhost:3000/events').then(res => res.json()),
-    fetch('http://localhost:3000/victims').then(res => res.json())
+    fetch('https://phase-1-final-project-digital-memorial-pt0z.onrender.com/events').then(res => res.json()),
+    fetch('https://phase-1-final-project-digital-memorial-pt0z.onrender.com/victims').then(res => res.json())
   ])
     .then(([events, victims]) => {
       eventsData = events.sort((a, b) => new Date(a.date) - new Date(b.date));
