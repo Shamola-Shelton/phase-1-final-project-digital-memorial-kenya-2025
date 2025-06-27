@@ -1,0 +1,30 @@
+{
+  "name": "phase-1-final-project-digital-memorial-kenya-2025",
+  "version": "1.0.0",
+  "description": "This project is a web-based memorial dedicated to honoring the victims of the 2024–2025 Kenyan protests against the Finance Bill. It provides a platform to view victim profiles, submit tributes, explore a timeline of key events, and access related resources. The site aims to preserve the memory of those lost, raise awareness, and foster community engagement through tributes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 10000",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shamola-Shelton/phase-1-final-project-digital-memorial-kenya-2025"
+  },
+  "keywords": [
+    "Kenya",
+    "Memorial",
+    "Protests",
+    "Tribute",
+    "JSON Server"
+  ],
+  "author": "Shelton Shamola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shamola-Shelton/phase-1-final-project-digital-memorial-kenya-2025/issues"
+  },
+  "homepage": "https://github.com/Shamola-Shelton/phase-1-final-project-digital-memorial-kenya-2025#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

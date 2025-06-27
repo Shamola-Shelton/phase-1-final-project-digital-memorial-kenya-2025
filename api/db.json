@@ -1,0 +1,249 @@
+{
+  "victims": [
+    {
+      "id": 1,
+      "name": "Albert Ojwang",
+      "age": 31,
+      "story": "Killed in police custody between June 7 and 8, 2025, in Nairobi after being arrested for criticizing a senior police official. His death sparked widespread outrage and protests.",
+      "photo": "https://i0.wp.com/www.kbc.co.ke/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-10-at-14.57.36.jpeg?resize=800%2C480&ssl=1"
+    },
+    {
+      "id": 2,
+      "name": "Rex Masai",
+      "age": 29,
+      "story": "Shot in the thigh by police on June 20, 2024, in Nairobi’s city center during anti-Finance Bill protests, becoming the first casualty. He died from excessive bleeding, as confirmed by his postmortem report.",
+      "photo": "https://publish.eastleighvoice.co.ke/mugera_lock/uploads/2024/06/GQkwpHaXYAAcrKc.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Abdi Kadir",
+      "age": 24,
+      "story": "A finance student shot by police during the June 2024 protests in Nairobi, left paralyzed, and died on July 16, 2024, at Kenyatta National Hospital.",
+      "photo": "https://www.june25kenya.org/profile-images/Abdi%20Kadir.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Evans Kiratu",
+      "age": 21,
+      "story": "A plumber killed on June 22, 2024, in Nairobi after being struck by a teargas canister, causing severe groin injuries.",
+      "photo": "https://www.ghafla.co.ke/ke/wp-content/uploads/sites/4/2024/06/evans-e1719577652499.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Eric Shieni",
+      "age": 27,
+      "story": "A finance student at the University of Nairobi, set to graduate in September 2024, died on June 25, 2024, from a gunshot to the head outside Parliament.",
+      "photo": "https://pbs.twimg.com/media/GQ-t0VaWMAAHFiJ.jpg"
+    },
+    {
+      "id": 6,
+      "name": "David Chege",
+      "age": 39,
+      "story": "A computer science graduate and freelance IT professional, died outside Parliament on June 25, 2024, during the Nairobi protests.",
+      "photo": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1oZHpN.img?w=534&h=280&m=6&x=640&y=153&s=188&d=188"
+    },
+    {
+      "id": 7,
+      "name": "Beasley Kamau",
+      "age": 22,
+      "story": "Went missing after protests in Nairobi, found dead on June 26, 2024, at Nairobi Funeral Home with head and chest injuries from blunt force trauma.",
+      "photo": "https://www.june25kenya.org/profile-images/IMG_2168.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Ibrahim Kamau Wanjiku",
+      "age": 19,
+      "story": "A school leaver and boda boda rider, killed by two gunshots to the neck during the June 2024 protests in Nairobi, aspiring to study electrical work.",
+      "photo": "https://www.june25kenya.org/profile-images/ibrahim.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Erickson Kyalo",
+      "age": 25,
+      "story": "An eatery operator in Nairobi’s Eastlands, shot dead outside Parliament on June 25, 2024, from a gunshot wound causing excessive bleeding and chest injuries.",
+      "photo": "https://www.june25kenya.org/profile-images/Erickson%20Mutisya.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Wilson Sitati",
+      "age": 22,
+      "story": "An electrical engineering student, died on his birthday, June 25, 2024, in Nairobi from blunt force trauma to the chest and neck while collecting a parcel.",
+      "photo": "https://www.june25kenya.org/profile-images/Wilson%20Sitati.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Dan Kakai",
+      "age": 17,
+      "story": "A Form Two student at St Veronica Siritanyi High School, shot in Bungoma on June 25, 2024, while heading for a haircut, succumbing to stomach bullet wounds.",
+      "photo": "https://www.june25kenya.org/profile-images/Dan%20Kakai.JPG"
+    },
+    {
+      "id": 12,
+      "name": "Kelvin Odhiambo Maina",
+      "age": 17,
+      "story": "Found dead in Nairobi’s city center on June 25, 2024, with severe head injuries from blunt force trauma during the protests.",
+      "photo": "https://www.june25kenya.org/profile-images/Kelvin%20Odhiambo%20Maina.JPG"
+    },
+    {
+      "id": 13,
+      "name": "Kenneth Njeru Mwangi",
+      "age": 20,
+      "story": "Died in Nairobi’s city center on June 25, 2024, from multiple injuries suspected to be from blunt force trauma during the protests.",
+      "photo": "https://www.june25kenya.org/profile-images/Kenneth%20Njeru.JPG"
+    },
+    {
+      "id": 14,
+      "name": "Kevin Andrew Mwawasi",
+      "age": 36,
+      "story": "Found dead at a Githurai bus stop on June 26, 2024, with fatal head injuries from a gunshot during the protests.",
+      "photo": "https://www.june25kenya.org/profile-images/Kelvin%20Andrew%20Mwawasi.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Kennedy Onyango",
+      "age": 14,
+      "story": "Killed in Rongai on June 25, 2024, after being shot while buying an exercise book, ambushed by police from his hiding place.",
+      "photo": "https://www.june25kenya.org/profile-images/Kennedy%20Onyango.JPG"
+    },
+    {
+      "id": 16,
+      "name": "Emmanuel Tata",
+      "age": 20,
+      "story": "Died in Mombasa on June 25, 2024, after being struck by teargas, becoming unconscious and passing away after transfer from Al Farooq Hospital.",
+      "photo": "https://www.june25kenya.org/profile-images/Emmanuel%20Tata.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Gredo Oyaro",
+      "age": 17,
+      "story": "Shot in the head by police in Eldoret on June 25, 2024, and died while receiving treatment at Moi Teaching and Referral Hospital.",
+      "photo": "https://www.june25kenya.org/profile-images/Credo%20Oyaro.jpeg"
+    },
+    {
+      "id": 33,
+      "name": "Chris Gitonga",
+      "age": null,
+      "story": "Killed by police in Nairobi on June 26, 2024, during the anti-Finance Bill protests. Age unknown.",
+      "photo": "https://www.june25kenya.org/profile-images/Chris%20Muriithi.jpg"
+    }
+  ],
+  "tributes": [
+    {
+      "id": 1,
+      "victimId": 1,
+      "author": "Anonymous",
+      "message": "We will remember your courage.",
+      "approved": true
+    },
+    {
+      "id": 2,
+      "victimId": 1,
+      "author": "shelton",
+      "message": "hello world",
+      "approved": false
+    },
+    {
+      "id": 4
+    },
+    {
+      "victimId": 3,
+      "author": "Diaz",
+      "message": "RIP",
+      "approved": false,
+      "id": 5
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "date": "2024-06-18",
+      "title": "Start of Protests",
+      "description": "Protests begin across Kenya in response to the Finance Bill 2024, driven by youth using social media to mobilize against proposed tax increases.",
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://ddc514qh7t05d.cloudfront.net/dA/31a38eb9421c15bc3356ba7af3946324/1000w/80q",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    },
+    {
+      "id": 2,
+      "date": "2024-06-20",
+      "title": "First Nationwide Protest",
+      "description": "Nationwide protests erupt against tax hikes, with clashes in Nairobi, Kisumu, and other cities. Rex Masai becomes the first casualty, shot by police in Nairobi.",
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/8570/live/0c49dc90-5294-11f0-966c-2964b4227343.jpg.webp",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    },
+    {
+      "id": 3,
+      "date": "2024-06-25",
+      "title": "Parliament Breach",
+      "description": "Protesters storm the Parliament building in Nairobi after the Finance Bill is passed, met with live ammunition from police, resulting in multiple casualties.",
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://wtop.com/wp-content/uploads/2024/06/Kenya_Protests_93648-1880x1254.jpg",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    },
+    {
+      "id": 4,
+      "date": "2024-06-26",
+      "title": "Bill Withdrawal",
+      "description": "President Ruto withdraws the Finance Bill 2024 following widespread unrest and international pressure.",
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2024-06/240626-kenya-protests-mb-1028-2afa85.jpg",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    },
+    {
+      "id": 5,
+      "date": "2024-06-30",
+      "title": "International Condemnation",
+      "description": "Global human rights groups condemn the Kenyan government’s use of excessive force against protesters.",
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://www.aljazeera.com/wp-content/uploads/2025/06/AFP__20250625__63NZ9JR__v2__HighRes__TopshotKenyaUnrestPolitics-1750843354.jpg?resize=1200%2C630",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    },
+    {
+      "id": 6,
+      "date": "2024-07-01",
+      "title": "82 Abductions Reported",
+      "description": "The Kenya National Commission on Human Rights (KNCHR) reports at least 82 protest-related abductions, raising concerns over state-sponsored violence.",
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://www.aljazeera.com/wp-content/uploads/2025/02/2025-01-06T095531Z_607817961_RC2KZBA3173Y_RTRMADP_3_KENYA-PROTESTS-RIGHTS-1739547578.jpg?resize=1800%2C1800",
+      "type": "protest",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    },
+    {
+      "id": 7,
+      "date": "2024-07-05",
+      "title": "Youth-Led Memorial Rallies",
+      "description": "Youth groups organize peaceful memorial rallies across Kenya to honor those who lost their lives during the protests.",
+      "link": "https://en.wikipedia.org/wiki/Kenya_Finance_Bill_protests#:~:text=the%20hashtag%20%23OccupyParliament.-,18%E2%80%9319%20June,held%20on%2020%20June%202024",
+      "image": "https://www.okayafrica.com/media-library/kenya-protestors-holding-up-flags-and-the-middle-finger-climb-a-statue-in-the-city-center-during-demonstrations.jpg?id=61104732&width=1245&height=700&quality=80&coordinates=0%2C78%2C0%2C79",
+      "type": "memorial",
+      "location": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    }
+  ]
+}

@@ -143,14 +143,11 @@
       "approved": false
     },
     {
-      "id": 4
-    },
-    {
+      "id": 5,
       "victimId": 3,
       "author": "Diaz",
       "message": "RIP",
-      "approved": false,
-      "id": 5
+      "approved": false
     }
   ],
   "events": [
