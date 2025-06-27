@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang恩="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Memorial for 2024/2025 Kenyan Protest Victims</title>
+  <title>Digital Memorial for 2024–2025 Kenyan Protest Victims</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -22,6 +23,7 @@
   <main>
     <section id="memorial-wall">
       <h2>Memorial Wall</h2>
+      <input type="text" id="search-bar" placeholder="Search by name..." aria-label="Search victims by name">
       <div id="victim-grid"></div>
     </section>
   </main>
@@ -29,6 +31,17 @@
   <footer>
     <p>Dedicated to the memory of those lost in the 2024–2025 Kenyan protests.</p>
   </footer>
+
+  <div id="victim-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <img id="modal-photo" src="" alt="">
+      <p id="modal-story"></p>
+      <button id="light-candle">Light a Candle</button>
+      <span id="candle-count">0 candles lit</span>
+    </div>
+  </div>
 
   <script src="./src/index.js"></script>
 </body>

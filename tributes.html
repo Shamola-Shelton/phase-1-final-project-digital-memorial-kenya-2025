@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Submit a Tribute</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -22,6 +23,7 @@
   <main>
     <section id="tribute-form">
       <h2>Submit a Tribute</h2>
+      <p class="guidelines">Share a memory, a message of support, or a reflection to honor the victim.</p>
       <form id="submit-tribute">
         <label for="victim-id">Select Victim:</label>
         <select id="victim-id" name="victim-id" required></select>
@@ -29,8 +31,12 @@
         <input type="text" id="name" name="name">
         <label for="message">Tribute Message:</label>
         <textarea id="message" name="message" required></textarea>
+        <label for="image">Upload an Image (Optional):</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        <button type="button" id="preview-btn">Preview Tribute</button>
         <button type="submit">Submit Tribute</button>
       </form>
+      <div id="tribute-preview" class="preview"></div>
       <div id="tribute-confirmation"></div>
     </section>
   </main>

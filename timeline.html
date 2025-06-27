@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Protest Timeline</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -22,7 +23,13 @@
   <main>
     <section id="timeline">
       <h2>Timeline of Protests</h2>
-      <div id="timeline-container"></div>
+      <select id="event-filter" aria-label="Filter events by type">
+        <option value="all">All Events</option>
+        <option value="protest">Protests</option>
+        <option value="memorial">Memorials</option>
+      </select>
+      <div id="timeline-container" class="horizontal-timeline"></div>
+      <div id="map-view" style="height: 400px;"></div>
     </section>
   </main>
 
@@ -30,6 +37,7 @@
     <p>Dedicated to the memory of those lost in the 2024–2025 Kenyan protests.</p>
   </footer>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
   <script src="./src/timeline.js"></script>
 </body>
 </html>
